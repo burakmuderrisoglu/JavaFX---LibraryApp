@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="517.0" prefWidth="426.0" style="-fx-background-color: #E9967A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Admin_Login_Controller">
+    <children>
+        <Button fx:id="Admin1_Login" layoutX="145.0" layoutY="315.0" mnemonicParsing="false" onAction="#LoginAdmin" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #F0F8FF;" text="Login as Admin">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="txtAdminName" layoutX="110.0" layoutY="179.0" prefHeight="45.0" prefWidth="206.0" promptText="Username" />
+
+        <Label layoutX="137.0" layoutY="14.0" />
+      <Label fx:id="isConnected" layoutX="54.0" layoutY="238.0" />
+      <AnchorPane prefHeight="78.0" prefWidth="426.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="42.77" radius="15.4425" />
+         </effect>
+         <children>
+              <Button fx:id="Back_Button" layoutX="325.0" layoutY="21.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #F0F8FF;" text="Back">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="60.0" layoutX="188.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/adminlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="95.0" layoutY="387.0" prefHeight="13.0" prefWidth="237.0" />
+      <PasswordField fx:id="txtAdminPassword" layoutX="110.0" layoutY="243.0" prefHeight="45.0" prefWidth="206.0" promptText="Password" />
+    </children>
+</AnchorPane>

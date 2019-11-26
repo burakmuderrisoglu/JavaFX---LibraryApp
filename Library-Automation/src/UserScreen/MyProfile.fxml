@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1042.0" style="-fx-background-color: #E9967A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserScreen.MyProfile_Controller">
+    <children>
+      <AnchorPane layoutX="21.0" layoutY="372.0" prefHeight="250.0" prefWidth="519.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="42.71" radius="20.855" width="42.71" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="24.0" layoutY="167.0" prefHeight="171.0" prefWidth="993.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="42.71" radius="20.855" width="42.71" />
+         </effect>
+      </AnchorPane>
+        <TableView fx:id="TableProfile" layoutX="47.0" layoutY="187.0" prefHeight="130.0" prefWidth="949.0">
+            <columns>
+                <TableColumn fx:id="UserID" prefWidth="69.0" text="User ID" />
+                <TableColumn fx:id="Name" prefWidth="106.0" text="Name" />
+                <TableColumn fx:id="Lastname" prefWidth="127.0" text="Lastname" />
+                <TableColumn fx:id="Sex" prefWidth="72.0" text="Sex" />
+                <TableColumn fx:id="Password" prefWidth="105.0" text="Password" />
+                <TableColumn fx:id="Phone" prefWidth="104.0" text="Phone" />
+                <TableColumn fx:id="E_Mail" minWidth="2.0" prefWidth="130.0" text="E_Mail" />
+                <TableColumn fx:id="RecoveryAnswer" prefWidth="129.0" text="Recovery Answer" />
+                <TableColumn fx:id="Username" prefWidth="106.0" text="Username" />
+            </columns>
+        </TableView>
+        <TableView fx:id="TableRentedBooks" layoutX="47.0" layoutY="393.0" onMouseClicked="#displaySelected" prefHeight="200.0" prefWidth="467.0">
+            <columns>
+                <TableColumn fx:id="book_title" prefWidth="466.0" text="Rented Books" />
+            </columns>
+        </TableView>
+        <Button layoutX="192.0" layoutY="105.0" mnemonicParsing="false" onAction="#ShowMyInformation" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #F0F8FF;" text="Show My Information" />
+        <Button fx:id="btnUpdateScreen" layoutX="437.0" layoutY="105.0" mnemonicParsing="false" onAction="#GoToUpdateProfile" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #F0F8FF;" text="Update Profile" />
+        <Button layoutX="687.0" layoutY="105.0" mnemonicParsing="false" onAction="#ShowMyRentedBooks" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #F0F8FF;" text="Show Rented Books" />
+        <Button layoutX="568.0" layoutY="393.0" mnemonicParsing="false" onAction="#ReturnRentedBook" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #F0F8FF;" text="Return Book" />
+      <Label fx:id="lblBookTitle" layoutX="340.0" layoutY="372.0" />
+      <AnchorPane prefHeight="78.0" prefWidth="1042.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="42.71" radius="15.4275" />
+         </effect>
+         <children>
+              <Label fx:id="Lblusernamemyprofile" layoutX="30.0" layoutY="24.0" prefHeight="31.0" prefWidth="168.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+              <Button fx:id="btnbacktomain" layoutX="931.0" layoutY="18.0" mnemonicParsing="false" onAction="#backtomain" prefHeight="42.0" prefWidth="75.0" style="-fx-background-color: #F0F8FF;" text="Back">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label alignment="CENTER" layoutX="410.0" layoutY="11.0" prefHeight="57.0" prefWidth="223.0" style="-fx-border-color: black; -fx-border-width: 2px;" text="LibraryApp">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="339.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/booksIcon2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="14.0" layoutY="345.0" prefHeight="21.0" prefWidth="1011.0" />
+    </children>
+</AnchorPane>

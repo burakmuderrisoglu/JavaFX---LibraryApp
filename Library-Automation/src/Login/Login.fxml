@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="530.0" style="-fx-background-color: #E9967A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Controller">
+    <children>
+        <Button fx:id="Admin_Login" layoutX="292.0" layoutY="355.0" mnemonicParsing="false" onAction="#GoAdminLoginPage" prefHeight="77.0" prefWidth="208.0" style="-fx-background-color: #F0F8FF;" text="Admin Login">
+            <font>
+                <Font size="26.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Button fx:id="User_Login" layoutX="292.0" layoutY="215.0" mnemonicParsing="false" onAction="#GoUserLoginPage" prefHeight="77.0" prefWidth="208.0" style="-fx-background-color: #F0F8FF;" text="User Login">
+            <font>
+                <Font size="26.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+      <BorderPane prefHeight="124.0" prefWidth="576.0" style="-fx-background-color: white;">
+         <center>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="313.0" style="-fx-border-color: black; -fx-border-width: 2px;" text=" LibraryApp" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="50.0" />
+               </font>
+            </Label>
+         </center>
+         <effect>
+            <DropShadow height="70.76" radius="22.44" />
+         </effect>
+      </BorderPane>
+      <BorderPane layoutY="121.0" prefHeight="397.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <center>
+            <ImageView fitHeight="164.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Images/booksIcon2.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="234.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/userlogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="241.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/adminlogo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

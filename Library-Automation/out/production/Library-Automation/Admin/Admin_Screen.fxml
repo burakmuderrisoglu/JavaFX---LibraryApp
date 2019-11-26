@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="457.0" style="-fx-background-color: #E9967A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Admin_Screen_Controller">
+    <children>
+      <AnchorPane prefHeight="79.0" prefWidth="457.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="42.71" radius="15.4275" />
+         </effect>
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="66.0" layoutX="194.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/adminlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+        <Button layoutX="229.0" layoutY="120.0" mnemonicParsing="false" onAction="#GoToAdminUserDetails" prefHeight="69.0" prefWidth="156.0" style="-fx-background-color: #F0F8FF;" text="User Details">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+        <Button layoutX="229.0" layoutY="377.0" mnemonicParsing="false" onAction="#GoToAdminLogin" prefHeight="69.0" prefWidth="156.0" style="-fx-background-color: #F0F8FF;" text="Logout">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+        <Button layoutX="229.0" layoutY="206.0" mnemonicParsing="false" onAction="#GoToAdminBookDetails" prefHeight="69.0" prefWidth="156.0" style="-fx-background-color: #F0F8FF;" text="Book Details">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+        <Button layoutX="229.0" layoutY="292.0" mnemonicParsing="false" onAction="#GoToUserBackup" prefHeight="69.0" prefWidth="156.0" style="-fx-background-color: #F0F8FF;" text="User Backup">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <AnchorPane prefHeight="482.0" prefWidth="164.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="147.0" layoutX="9.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/booksIcon2.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="13.0" layoutY="138.0" prefHeight="46.0" prefWidth="139.0" style="-fx-border-color: black;" text="LibraryApp">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
